@@ -241,7 +241,7 @@ namespace mpv_csharp_uwp
         #endregion Enumeration
 
         #region Imports
-        private const string libmpv = "mpv.dll";
+        private const string libmpv = "mpv-1.dll";
 
         [DllImport(libmpv, EntryPoint = "mpv_create", SetLastError = true, CharSet = CharSet.Ansi, BestFitMapping = false, CallingConvention = CallingConvention.Cdecl)]
         private static extern IntPtr mpv_create();
