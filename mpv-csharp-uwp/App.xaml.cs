@@ -30,6 +30,7 @@ namespace mpv_csharp_uwp
             {
                 await ActivationService.ActivateAsync(args);
             }
+            Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().SetDesiredBoundsMode(Windows.UI.ViewManagement.ApplicationViewBoundsMode.UseCoreWindow);
         }
 
         protected override async void OnActivated(IActivatedEventArgs args)
